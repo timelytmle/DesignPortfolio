@@ -1,6 +1,6 @@
 # DesignPortfolio
 
-My Graphic Design Portfolio Site
+My graphic design portfolio site
 
 The site is deployed via Netlify
 
