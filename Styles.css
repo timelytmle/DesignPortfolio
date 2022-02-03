@@ -46,22 +46,24 @@ body {
 }
 .symantec header.main:before {
   content: " ";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 2em;
-  background-color: #5356fc;
+  background-color: #180099;
+  z-index: 100;
 }
 .symantec header.main .caption {
   display: inline-block;
   padding: 1px 4px;
-  position: absolute;
+  position: fixed;
   top: 1.5em;
   right: 2em;
   color: white;
   background: black;
   text-transform: uppercase;
+  z-index: 200;
 }
 .symantec .win {
   position: relative;
