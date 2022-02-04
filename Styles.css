@@ -11,15 +11,6 @@ body {
   background-color: black;
 }
 
-.screen {
-  padding: 0;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-}
-.screen:first-child {
-  border-top: none;
-}
-
 .win {
   max-width: 60%;
   min-width: 300px;
@@ -33,14 +24,16 @@ body {
   margin-bottom: 0;
 }
 
-.symantec {
+.symantec_top {
   background-color: #555555;
+  padding: 0;
+  border-bottom: 2px solid black;
 }
-.symantec header.main {
+.symantec_top header.main {
   position: relative;
   height: 4em;
 }
-.symantec header.main:before {
+.symantec_top header.main:before {
   content: " ";
   position: fixed;
   top: 0;
@@ -50,7 +43,7 @@ body {
   background-color: #180099;
   z-index: 100;
 }
-.symantec header.main .caption {
+.symantec_top header.main .caption {
   display: inline-block;
   padding: 1px 4px;
   position: fixed;
@@ -61,7 +54,7 @@ body {
   text-transform: uppercase;
   z-index: 200;
 }
-.symantec .win {
+.symantec_top .win {
   position: relative;
   margin: 50px auto;
   border: 2px solid white;
@@ -70,13 +63,13 @@ body {
   background-color: #5356fc;
   box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.8);
 }
-.symantec .win:first-of-type {
+.symantec_top .win:first-of-type {
   margin-top: 0px;
 }
-.symantec .win .caption {
+.symantec_top .win .caption {
   margin-bottom: 15px;
 }
-.symantec .win .caption .title {
+.symantec_top .win .caption .title {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +80,7 @@ body {
   color: black;
   text-align: center;
 }
-.symantec .win .caption .title:before {
+.symantec_top .win .caption .title:before {
   content: " ";
   position: absolute;
   left: 0;
@@ -96,7 +89,7 @@ body {
   height: 19px;
   background: black;
 }
-.symantec .win .caption .title:after {
+.symantec_top .win .caption .title:after {
   content: "-";
   position: absolute;
   left: 5px;
@@ -104,39 +97,41 @@ body {
   font-size: 24px;
   color: white;
 }
-.symantec strong {
+.symantec_top strong {
   color: #fcff55;
   font-weight: normal;
 }
 
-.norton {
+.symantec_bottom {
   background-color: #333333;
+  padding: 0;
+  border-top: 2px solid black;
 }
-.norton .win {
+.symantec_bottom .win {
   position: relative;
   margin: 50px auto;
   padding: 50px 60px;
   box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.8);
 }
-.norton .win:before, .norton .win:after {
+.symantec_bottom .win:before, .symantec_bottom .win:after {
   content: " ";
   position: absolute;
   border: 1px solid #2efffe;
   z-index: 1;
 }
-.norton .win:before {
+.symantec_bottom .win:before {
   top: 20px;
   bottom: 20px;
   left: 20px;
   right: 20px;
 }
-.norton .win:after {
+.symantec_bottom .win:after {
   top: 22px;
   bottom: 22px;
   left: 22px;
   right: 22px;
 }
-.norton .win .caption {
+.symantec_bottom .win .caption {
   position: absolute;
   top: 14px;
   left: 0;
@@ -144,58 +139,58 @@ body {
   text-align: center;
   z-index: 2;
 }
-.norton .win .caption .title {
+.symantec_bottom .win .caption .title {
   display: inline-block;
   padding-left: 0.8em;
   padding-right: 0.6em;
 }
-.norton .win strong {
+.symantec_bottom .win strong {
   font-weight: normal;
 }
-.norton .win.blue-theme {
+.symantec_bottom .win.blue-theme {
   color: #2efffe;
   background-color: #180099;
 }
-.norton .win.blue-theme:before, .norton .win.blue-theme:after {
+.symantec_bottom .win.blue-theme:before, .symantec_bottom .win.blue-theme:after {
   border-color: #2efffe;
 }
-.norton .win.blue-theme .caption .title {
+.symantec_bottom .win.blue-theme .caption .title {
   background-color: #180099;
 }
-.norton .win.blue-theme strong {
+.symantec_bottom .win.blue-theme strong {
   color: #fcff55;
 }
-.norton .win.gray-theme {
+.symantec_bottom .win.gray-theme {
   color: #000000;
   background-color: #afa8af;
 }
-.norton .win.gray-theme:before, .norton .win.gray-theme:after {
+.symantec_bottom .win.gray-theme:before, .symantec_bottom .win.gray-theme:after {
   border-color: #000000;
 }
-.norton .win.gray-theme .caption .title {
+.symantec_bottom .win.gray-theme .caption .title {
   background-color: #afa8af;
 }
-.norton .win.gray-theme strong {
+.symantec_bottom .win.gray-theme strong {
   background-color: #1ca8af;
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
-.norton .win.cyan-theme {
+.symantec_bottom .win.cyan-theme {
   color: #ffffff;
   background-color: #1ca8af;
 }
-.norton .win.cyan-theme:before, .norton .win.cyan-theme:after {
+.symantec_bottom .win.cyan-theme:before, .symantec_bottom .win.cyan-theme:after {
   border-color: #ffffff;
 }
-.norton .win.cyan-theme .caption .title {
+.symantec_bottom .win.cyan-theme .caption .title {
   background-color: #1ca8af;
 }
-.norton .win.cyan-theme strong {
+.symantec_bottom .win.cyan-theme strong {
   background-color: #000000;
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
-.norton .win.cyan-theme p {
+.symantec_bottom .win.cyan-theme p {
   text-align: center;
 }
 

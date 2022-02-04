@@ -12,16 +12,6 @@ body {
 	background-color: black;
 }
 
-.screen {
-	padding: 0;
-	border-bottom: 2px solid black;
-	border-top: 2px solid black;
-  
-	&:first-child {
-		border-top: none;
-	}
-}
-
 .win {
 	max-width: 60%;
 	min-width: 300px;
@@ -37,13 +27,15 @@ body {
 	}
 }
 
-.symantec {
+.symantec_top {
 	$color-back: #555555;
 	$color-accent: #5356fc;
 	$color-accent2: #fcff55;
 	$color-link: #7dff8a;
 
 	background-color: $color-back;
+	padding: 0;
+	border-bottom: 2px solid black;
   
 	header.main {
 		position: relative;
@@ -129,7 +121,7 @@ body {
 	}
 }
 
-.norton {
+.symantec_bottom {
 	$color-back: #333333;
 	$color-accent2: #fcff55;
 
@@ -153,6 +145,8 @@ body {
 	$frame-offset: 20px;
 
 	background-color: $color-back;
+	padding: 0;
+	border-top: 2px solid black;
   
 	.win {
 		position: relative;
