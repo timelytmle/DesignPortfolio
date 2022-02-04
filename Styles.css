@@ -71,10 +71,7 @@ body {
   box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.8);
 }
 .symantec .win:first-of-type {
-  margin-top: 25px;
-}
-.symantec .win a {
-  color: #7dff8a;
+  margin-top: 0px;
 }
 .symantec .win .caption {
   margin-bottom: 15px;
@@ -165,9 +162,6 @@ body {
 .norton .win.blue-theme .caption .title {
   background-color: #180099;
 }
-.norton .win.blue-theme a {
-  color: #fcff2f;
-}
 .norton .win.blue-theme strong {
   color: #fcff55;
 }
@@ -180,9 +174,6 @@ body {
 }
 .norton .win.gray-theme .caption .title {
   background-color: #afa8af;
-}
-.norton .win.gray-theme a {
-  color: #fcff2f;
 }
 .norton .win.gray-theme strong {
   background-color: #1ca8af;
@@ -198,9 +189,6 @@ body {
 }
 .norton .win.cyan-theme .caption .title {
   background-color: #1ca8af;
-}
-.norton .win.cyan-theme a {
-  color: #fcff2f;
 }
 .norton .win.cyan-theme strong {
   background-color: #000000;

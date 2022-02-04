@@ -84,11 +84,7 @@ body {
 		box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.8);
 
 		&:first-of-type {
-			margin-top: 25px;
-		}
-    
-		a {
-			color: $color-link;
+			margin-top: 0px;
 		}
     
 		.caption {
@@ -214,10 +210,6 @@ body {
 		.caption .title {
 			background-color: $color-blue-accent;
 		}
-    
-		a {
-			color: $color-blue-link;
-		}
 
 		strong {
 			color: $color-accent2;
@@ -235,10 +227,6 @@ body {
     
 		.caption .title {
 			background-color: $color-gray-accent;
-		}
-    
-		a {
-			color: $color-gray-link;
 		}
 
 		strong {
@@ -259,10 +247,6 @@ body {
     
 		.caption .title {
 			background-color: $color-cyan-accent;
-		}
-    
-		a {
-			color: $color-cyan-link;
 		}
 
 		strong {
