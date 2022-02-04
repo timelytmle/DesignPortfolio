@@ -37,10 +37,6 @@ body {
 	}
 }
 
-.content-center {
-	text-align: center;
-}
-
 .symantec {
 	$color-back: #555555;
 	$color-accent: #5356fc;
@@ -274,9 +270,14 @@ body {
 			padding-left: 0.8em;
 			padding-right: 0.8em;
 		}
+
+		p {
+			text-align: center;
+		}
 	}
 }
 
+//Content containters. Mainly flex-box positioning and alignment styling below
 .container-introduction {
 	display: flex;
 	flex-direction: row;
@@ -295,7 +296,6 @@ body {
 		flex-basis: 60%;
 		text-align: justify;
 	}
-
 }
 
 .container-banner {
