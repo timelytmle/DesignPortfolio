@@ -4,14 +4,12 @@ html, body {
 	padding: 0;
 	margin: 0;
 }
-
 body {
 	font-family: "Share Tech Mono", monospace;
 	font-weight: normal;
 	font-size: 16px;
 	background-color: black;
 }
-
 .win {
 	max-width: 60%;
 	min-width: 300px;
@@ -26,7 +24,30 @@ body {
 		margin-bottom: 0;
 	}
 }
+header {
+	&:before {
+		content: ' ';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2em;
+		background-color: #180099;
+		z-index: 100;
+	}
 
+	div {
+		display: inline-block;
+		padding: 1px 4px;
+		position: fixed;
+		top: 1.5em;
+		right: 2em;
+		color: white;
+		background: black;
+		text-transform: uppercase;
+		z-index: 200;
+	}
+}
 .symantec_top {
 	$color-back: #555555;
 	$color-accent: #5356fc;
@@ -34,36 +55,8 @@ body {
 	$color-link: #7dff8a;
 
 	background-color: $color-back;
-	padding: 0;
+	padding: 4em 0 0 0;
 	border-bottom: 2px solid black;
-  
-	header.main {
-		position: relative;
-		height: 4em;
-
-		&:before {
-			content: ' ';
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 2em;
-			background-color: #180099;
-			z-index: 100;
-		}
-
-		.caption {
-			display: inline-block;
-			padding: 1px 4px;
-			position: fixed;
-			top: 1.5em;
-			right: 2em;
-			color: white;
-			background: black;
-			text-transform: uppercase;
-			z-index: 200;
-		}
-	}
 
 	.win {
 		position: relative;
@@ -120,7 +113,6 @@ body {
 		font-weight: normal;
 	}
 }
-
 .symantec_bottom {
 	$color-back: #333333;
 	$color-accent2: #fcff55;
@@ -275,7 +267,6 @@ body {
 		text-align: justify;
 	}
 }
-
 .container-banner {
 	display: flex;
 	flex-direction: column;
@@ -288,7 +279,6 @@ body {
 		width: 90%;
 	}
 }
-
 .container-icons {
 	display: flex;
 	flex-direction: column;
@@ -320,7 +310,6 @@ body {
 		}
 	}
 }
-
 .container-spinners {
 	display: flex;
 	flex-direction: column;
