@@ -774,14 +774,20 @@
          d="m 2.0000003e-5,63.499998 c 141.111369999997,0 282.222469999997,0 423.333299999997,0"
          id="path63837" />
     </g>
-	<animateTransform 
-		attributeName="transform"
+	<!--animateTransform 
+	attributeName="transform"
         attributeType="XML"
         type="translate"
         from="0 0"
         to="0 100"
         dur="30s"
         repeatCount="indefinite"
+	/-->
+	  
+	<animateMotion
+		path="M0,0 V200"
+      		dur="30s"
+      		repeatCount="indefinite"
 	/>
 
   </g>
