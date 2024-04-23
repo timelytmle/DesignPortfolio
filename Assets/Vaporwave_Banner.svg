@@ -785,7 +785,7 @@
 	/-->
 	  
 	<animateMotion
-		path="M0,0 V200"
+		path="M0,0 V150"
       		dur="30s"
       		repeatCount="indefinite"
 	/>
