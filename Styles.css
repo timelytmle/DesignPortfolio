@@ -121,6 +121,8 @@
   left: 22px;
   right: 22px;
 }
+
+
 .symantec section:last-of-type > div > div:first-child {
   position: absolute;
   top: 14px;
@@ -166,6 +168,8 @@
 .symantec section:last-of-type > div:nth-child(1) > div:last-of-type img {
   width: 90%;
 }
+
+
 .symantec section:last-of-type > div:nth-child(2) {
   color: #000000;
   background-color: #afa8af;
@@ -209,6 +213,8 @@
 .symantec section:last-of-type > div:nth-child(2) > div:last-of-type div img:hover {
   opacity: 0.6;
 }
+
+
 .symantec section:last-of-type > div:nth-child(3) {
   color: #2efffe;
   background-color: #180099;
